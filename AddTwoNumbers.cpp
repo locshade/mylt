@@ -31,7 +31,7 @@ public:
 		int x,y,overflow=0,sum;
 		
 		ListNode *result = NULL;
-		LIstNode **t =&result;
+		ListNode **t =&result;
 
 		while(l1!=NULL ||l2!=NULL)
 		{
@@ -46,7 +46,7 @@ public:
 		}
 		if(overflow > 0)
 		{
-			ListNode *node = new ListNode(carry%10);
+			ListNode *node = new ListNode(overflow%10);
 			*t = node;
 		}
 		return result;		
